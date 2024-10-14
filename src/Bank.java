@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Random;
 
 public class Bank {
     /* ATRIBUTOS */
@@ -33,6 +34,11 @@ public class Bank {
         for (Account account : this.accounts) {
             account.monthlyReview();
         }
+    }
+
+    public void lottery () {
+        int n = this.accounts.size();
+        this.accounts.get( ( new Random()).nextInt(n) ).depositMoney( 300 );
     }
 
     public void showAccounts() {

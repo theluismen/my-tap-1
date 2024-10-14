@@ -39,5 +39,11 @@ public class Main {
         bank.monthlyReview();
         System.out.println("=> After Monthly Review...");
         bank.showAccounts();
+
+        // TEST: Lottery
+        System.out.println("=> Performing Lottery...");
+        bank.lottery();
+        System.out.println("=> After Lottery...");
+        bank.showAccounts();
     }
 }
