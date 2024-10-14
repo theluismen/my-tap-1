@@ -5,8 +5,8 @@ public class Main {
         Bank bank = new Bank();
 
         // Clientes
-        Customer c1 = new Customer ( 1,"Luis","Calle","660" );
-        Customer c2 = new Customer ( 2,"Fary","Banco","660" );
+        Customer c1 = new Customer ( 1,"Zuis","Calle","660" );
+        Customer c2 = new Customer ( 2,"Uary","Banco","660" );
         Customer c3 = new Customer ( 3,"Pepe","Cajero","660" );
 
         // Añadir Clientes
@@ -45,5 +45,9 @@ public class Main {
         bank.lottery();
         System.out.println("=> After Lottery...");
         bank.showAccounts();
+
+        // TEST: Get account by Dict Id
+        System.out.println("=> Getting Account by Id = 2...");
+        System.out.println( bank.getAccountById(2).toString() );
     }
 }
